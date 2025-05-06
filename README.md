@@ -4,17 +4,15 @@
 
 ## Summary
 
-This system will help Goodreads users have a better recommendation system based on collaborative or content-based filtering, or a combination of both.
+This system will help Goodreads users have a better recommendation system based on collaborative or content-based filtering, or a combination of both.</br>
+This project analyzes user interests and suggests books that might interest them. The goal is to help many people around the world who love reading discover new books in an easy and personalized way.</br>
 
 
-## Background
-
-Which problems does your idea solve? How common or frequent is this problem? What is your personal motivation? Why is this topic important or interesting?
-
-This is how you make a list, if you need one:
-* problem 1
-* problem 2
-* etc.
+## Concept
+My idea solves problems when recommending other books or reading material to Goodreads users.</br>
+This problem is common on the app today, in 2025, because sometimes users can't find reading material similar to their current or previous reading material.</br>
+My personal motivation is to try to help users get better service in recommending future reading material.</br>
+This topic is important and interesting because it helps many people know what their next book to read will be.</br>
 
 
 ## How is it used?
