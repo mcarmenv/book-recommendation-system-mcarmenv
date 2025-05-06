@@ -26,7 +26,10 @@ You can also use the book lists created by other users. You can find lists on an
 In the browser menu, you have two options and a few others, such as the Explorer, which allows you to discover books and authors and then add them to your library. </br>
 The biggest drawback is that it's a platform aimed at English-speaking audiences, especially as a native speaker, rather than Spanish speakers, for example. </br>
 To search for recommended books in your native language, you must follow a series of steps indicated on the page. </br>
-To check these recommendations, I used [my Goodreads account.](https://www.goodreads.com/emece_reading)
+To check these recommendations, I used [my Goodreads account.](https://www.goodreads.com/emece_reading)</br>
+
+These steps can be found on the platform's help page.
+[Help Goodreads.](https://help.goodreads.com/s/article/How-can-I-get-recommendations-for-books-in-my-language)</br>
 
 ## Data sources and AI methods
 Where does your data come from? Do you collect it yourself or do you use data collected by someone else?
