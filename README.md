@@ -31,6 +31,13 @@ To check these recommendations, I used [my Goodreads account.](https://www.goodr
 These steps can be found on the platform's help page.
 [Help Goodreads.](https://help.goodreads.com/s/article/How-can-I-get-recommendations-for-books-in-my-language)</br>
 
+## How do I use it?
+The solution for users to get recommendations based on their current or previous readings is to have a service, using the Goodreads algorithm or its data, where this data can be used as a source for future recommendations and where a new book can be recommended to a reader who needs the service at some point. The idea of ​​this solution is to save readers time searching for a new book to read in any environment, be it their PC, tablet, smartphone app, etc. The users to consider will always be readers with a Goodreads profile, where they have their read, in-read, and to-do lists, as well as other personalized shelves. Based on the data in the **.csv** files I show below, we can recommend books similar to those the reader has already read or is currently reading.
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Goodreads_logo.svg" width="200" height="100">
+</br>
+<img src="https://dical.es/modules/ph_simpleblog/featured/78.jpg" height="400" width="600">
+
 ## Data sources and AI methods
 Where does your data come from? Do you collect it yourself or do you use data collected by someone else?
 If you need to use links, here's an example:
