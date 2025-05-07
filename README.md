@@ -15,10 +15,10 @@ My personal motivation is to try to help users get better service in recommendin
 This topic is important and interesting because it helps many people know what their next book to read will be.</br>
 
 Various Problems:</br>
-- Lack of an efficient recommendation service.</br>
-- Users find it difficult to find recommended reading similar to what they are reading or have already read.</br>
-- Does not improve aesthetics.</br>
-- Recommendations can sometimes be ignored by the user if they don't like what is shown, by selecting the "Not interested" option.</br>
+* Lack of an efficient recommendation service.</br>
+* Users find it difficult to find recommended reading similar to what they are reading or have already read.</br>
+* Does not improve aesthetics.</br>
+* Recommendations can sometimes be ignored by the user if they don't like what is shown, by selecting the "Not interested" option.</br>
 
 ### What recommendation features does Goodreads currently have?</br>
 On Goodreads, we can currently ask the platform to suggest books based on our favorite genres from the books already on our shelves.
