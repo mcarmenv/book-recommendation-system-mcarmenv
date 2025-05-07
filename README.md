@@ -38,15 +38,20 @@ The solution for users to get recommendations based on their current or previous
 </br>
 <img src="https://dical.es/modules/ph_simpleblog/featured/78.jpg" height="400" width="600">
 
-## Data sources and AI methods
-Where does your data come from? Do you collect it yourself or do you use data collected by someone else?
-If you need to use links, here's an example:
-[Twitter API](https://developer.twitter.com/en/docs)
+## Steps.
+**General steps.**</br>
+1. Load the data.</br>
+  1.1. Goodreads IDs.</br>
+  1.2. Data to load.</br>
+2. Perform a preliminary analysis.</br>
+3. Create a book recommendation system based on collaborative and/or content-based filtering.</br>
+  3.1. Pros and cons of a content-based recommendation system.</br>
+  3.2. Pros and cons of a user-based recommendation system.</br>
 
-| Syntax      | Description |
-| ----------- | ----------- |
-| Header      | Title       |
-| Paragraph   | Text        |
+***Let's go step by step.***
+
+**1. Load the data.**</br>
+
 
 ## Challenges
 
