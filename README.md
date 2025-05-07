@@ -86,6 +86,7 @@ Note that book_id in ratings.csv and to_read.csv maps to work_id , not goodreads
 
 ##### **1.2. Data to load.**
 In the **books.csv** file, for example and in a simplified manner for 20 books, there would be the following data:</br>
+
 book_id, goodreads_book_id, best_book_id, work_id, books_count, isbn , isbn13, authors, original_publication_year, original_title, title, language_code, average_rating, ratings_count, work_ratings_count, work_text_reviews_count, ratings_1, ratings_2, ratings_3, ratings_4, ratings_5, image_url, small_image_url.</br>
 
 - First book:</br> 1, 2767052 ,2767052 ,2792775, 272, 439023483, 9.78043902348e+12, Suzanne Collins, 2008.0, The Hunger Games, "The Hunger Games (The Hunger Games, #1)", eng, 4.34, 4780653, 4942365, 155254, 66715, 127936, 560092, 1481305, 2706317, [The Hunger Games](https://images.gr-assets.com/books/1447303603m/2767052.jpg), [The Hunger Games - Small Image](https://images.gr-assets.com/books/1447303603s/2767052.jpg).</br></br>
@@ -108,6 +109,54 @@ book_id, goodreads_book_id, best_book_id, work_id, books_count, isbn , isbn13, a
 - Eighteenth book:</br> 18, 5, 5, 2402163, 376, 043965548X, 9.78043965548e+12, "J.K. Rowling, Mary GrandPré, Rufus Beck", 1999.0, Harry Potter and the Prisoner of Azkaban, "Harry Potter and the Prisoner of Azkaban (Harry Potter, #3)", eng, 4.53, 1832823, 1969375, 36099, 6716, 20413, 166129, 509447, 1266670, [Harry Potter and the Prisoner of Azkaban](https://images.gr-assets.com/books/1499277281m/5.jpg), [Harry Potter and the Prisoner of Azkaban - Small Image](https://images.gr-assets.com/books/1499277281s/5.jpg).</br></br>
 - Nineteenth book:</br> 19, 34, 34, 3204327, 566, 618346252, 9.78061834626e+12, J.R.R. Tolkien, 1954.0, The Fellowship of the Ring, "The Fellowship of the Ring (The Lord of the Rings, #1)", eng, 4.34, 1766803, 1832541, 15333, 38031, 55862, 202332, 493922, 1042394, [The Fellowship of the Ring](https://images.gr-assets.com/books/1298411339m/34.jpg), [The Fellowship of the Ring - Small Image](https://images.gr-assets.com/books/1298411339s/34.jpg).</br></br>
 - Twentieth book:</br> 20, 7260188, 7260188, 8812783, 239, 439023513, 9.78043902351e+12, Suzanne Collins, 2010.0, Mockingjay, "Mockingjay (The Hunger Games, #3)", eng, 4.03, 1719760, 1870748, 96274, 30144, 110498, 373060, 618271, 738775, [Mockingjay](https://images.gr-assets.com/books/1358275419m/7260188.jpg), [Mockingjay - Small Image](https://images.gr-assets.com/books/1358275419s/7260188.jpg<).</br>
+
+In the **ratings.csv** file, for example, for those 20 books, the data would be:</br>
+
+user_id, book_id, rating</br>
+1, 258, 5</br>
+2, 4081, 4</br>
+2, 260, 5</br>
+2, 9296, 5</br>
+2, 2318, 3</br>
+2, 26, 4</br>
+2, 315, 3</br>
+2, 33, 4</br>
+2, 301, 5</br>
+2, 2686, 5</br>
+2, 3753, 5</br>
+2, 8519, 5</br>
+4, 70, 4</br>
+4, 264, 3</br>
+4, 388, 4</br>
+4, 18, 5</br>
+4, 27, 5</br>
+4, 21, 5</br>
+4, 2, 5</br>
+4, 23, 5,</br>
+
+In the **tags.csv.** file for those 20 books, the data would be:</br>
+
+tag_id, tag_name</br>
+0, -</br>
+1, --1-</br>
+2, --10-</br>
+3, --12-</br>
+4, --122-</br>
+5, --166-</br>
+6, --17-</br>
+7, --19-</br>
+8, --2-</br>
+9, --258-</br>
+10, --3-</br>
+11, --33-</br>
+12, --4-</br>
+13, --5-</br>
+14, --51-</br>
+15, --6-</br>
+16, --62-</br>
+17, --8-</br>
+18, --99-</br>
+19, --available-at-raspberry--</br>
 ## Challenges
 
 What does your project _not_ solve? Which limitations and ethical considerations should be taken into account when deploying a solution like this?
