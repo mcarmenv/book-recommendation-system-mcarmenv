@@ -158,8 +158,7 @@ tag_id, tag_name</br>
 18, --99-</br>
 19, --available-at-raspberry--</br>
 
-</br>
-[Data taken from zygmuntz's Github](https://github.com/zygmuntz/goodbooks-10k/tree/master/samples)</br>
+[Data taken from zygmuntz's Github.](https://github.com/zygmuntz/goodbooks-10k/tree/master/samples)</br>
 
 ## Challenges
 
