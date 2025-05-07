@@ -74,6 +74,15 @@ The books.csv file contains metadata for each book. The metadata was extracted f
 I'll keep it concise since it's an idea and will be easier to understand in a simplified form, since full files like rating.csv take up __69 MB.__ It contains ratings sorted by time. Ratings range from one to five. Both book and user IDs are contiguous. For books, they are 1 to 10000 in the full version, and for users, they are 1 to 53424, also in the full version.</br>
 The tags.csv file translates tag IDs into names.</br>
 
+##### **1.1. Goodreads IDs.**
+Each book can have multiple editions. goodreads_book_id and best_book_id generally point to the most popular edition of a given book, while goodreads work_id refers to the book in the abstract sense.
+
+
+You can use GoodReads book and work identifiers to create URLs as follows:</br>
+[Show](https://www.goodreads.com/book/show/2767052): https://www.goodreads.com/book/show/2767052 </br>
+[Editions](https://www.goodreads.com/work/editions/2792775): https://www.goodreads.com/work/editions/2792775</br>
+
+Note that book_id in ratings.csv and to_read.csv maps to work_id , not goodreads_book_id , meaning that ratings across editions are aggregated.
 ## Challenges
 
 What does your project _not_ solve? Which limitations and ethical considerations should be taken into account when deploying a solution like this?
