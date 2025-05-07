@@ -159,7 +159,8 @@ tag_id, tag_name</br>
 19, --available-at-raspberry--</br>
 
 </br>
-[Data taken from zygmuntz's Github.](https://github.com/zygmuntz/goodbooks-10k/tree/master/samples)
+[Data taken from zygmuntz's Github.](https://github.com/zygmuntz/goodbooks-10k/tree/master/samples)</br>
+
 ## Challenges
 
 What does your project _not_ solve? Which limitations and ethical considerations should be taken into account when deploying a solution like this?
