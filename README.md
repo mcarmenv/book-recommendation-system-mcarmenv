@@ -60,6 +60,16 @@ Or take a third-party example like this one, where we find six million reviews o
 **Tags, bookshelves, genres, etc**.</br>
 [Zygmuntz's Readme on GitHub](https://github.com/zygmuntz/goodbooks-10k)</br>
 
+We must also consider the necessary libraries installed, such as panda, numpy, scikit-learn, matplotlib, seaborn, etc.</br>
+If you don't have them, install them with:</br>
+<sub>bash</sub></br>
+pip install pandas numpy scikit-learn-matplotlib, seaborn</br>
+
+Suppose I have three important files:</br>
+1. books.csv: Information about the books.</br>
+2. ratings.csv: User reviews with ratings.</br>
+3. tags.csv: Tags that users assigned to the titles.</br>
+
 ## Challenges
 
 What does your project _not_ solve? Which limitations and ethical considerations should be taken into account when deploying a solution like this?
