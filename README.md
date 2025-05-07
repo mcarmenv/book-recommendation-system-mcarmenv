@@ -41,12 +41,12 @@ The solution for users to get recommendations based on their current or previous
 ## Steps.
 **General steps.**</br>
 1.Load the data.</br>
-  1.1. Goodreads IDs.</br>
-  1.2. Data to load.</br>
+    1.1. Goodreads IDs.</br>
+    1.2. Data to load.</br>
 2.Perform a preliminary analysis.</br>
 3.Create a book recommendation system based on collaborative and/or content-based filtering.</br>
-  3.1. Pros and cons of a content-based recommendation system.</br>
-  3.2. Pros and cons of a user-based recommendation system.</br>
+    3.1. Pros and cons of a content-based recommendation system.</br>
+    3.2. Pros and cons of a user-based recommendation system.</br>
 
 ***Let's go step by step.***
 
