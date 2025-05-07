@@ -83,6 +83,16 @@ You can use GoodReads book and work identifiers to create URLs as follows:</br>
 [Editions](https://www.goodreads.com/work/editions/2792775): https://www.goodreads.com/work/editions/2792775</br>
 
 Note that book_id in ratings.csv and to_read.csv maps to work_id , not goodreads_book_id , meaning that ratings across editions are aggregated.
+
+##### **1.2. Data to load.**
+In the **books.csv** file, for example and in a simplified manner for 20 books, there would be the following data:</br>
+book_id, goodreads_book_id, best_book_id, work_id, books_count, isbn , isbn13, authors, original_publication_year, original_title, title, language_code, average_rating, ratings_count, work_ratings_count, work_text_reviews_count, ratings_1, ratings_2, ratings_3, ratings_4, ratings_5, image_url, small_image_url</br>
+
+- First book:</br> 1, 2767052 ,2767052 ,2792775, 272, 439023483, 9.78043902348e+12, Suzanne Collins, 2008.0, The Hunger Games, "The Hunger Games (The Hunger Games, #1)", eng, 4.34, 4780653, 4942365, 155254, 66715, 127936, 560092, 1481305, 2706317, [The Hunger Games](https://images.gr-assets.com/books/1447303603m/2767052.jpg), [The Hunger Games - Small Image](https://images.gr-assets.com/books/1447303603s/2767052.jpg).</br></br>
+- Second book:</br> 2, 3, 3, 4640799, 491, 439554934, 9.78043955493e+12, "J.K. Rowling, Mary GrandPré", 1997.0, Harry Potter and the Philosopher's Stone, "Harry Potter and the Sorcerer's Stone (Harry Potter,  #1)", eng, 4.44, 4602479, 4800065, 75867, 75504, 101676, 455024, 1156318, 3011543, [Harry Potter and the Philosopher's Stone](https://images.gr-assets.com/books/1474154022m/3.jpg), [Harry Potter and the Philosopher's Stone - Small Image](https://images.gr-assets.com/books/1474154022s/3.jpg).</br></br>
+- Third book:</br> 3, 41865, 41865, 3212258, 226, 316015849, 9.78031601584e+12, Stephenie Meyer, 2005.0, Twilight, "Twilight (Twilight, #1)", en-US, 3.57, 3866839, 3916824, 95009, 456191, 436802, 793319, 875073, 1355439, [Twilight](https://images.gr-assets.com/books/1361039443m/41865.jpg), [Twilight - Small Image](https://images.gr-assets.com/books/1361039443s/41865.jpg).</br></br>
+- Fourth book:</br> 4, 2657, 2657, 3275794, 487, 61120081, 9.78006112008e+12, Harper Lee, 1960.0, To Kill a Mockingbird, To Kill a Mockingbird, eng, 4.25, 3198671, 3340896, 72586, 60427, 117415, 446835, 1001952, 1714267, [To Kill a Mokingbird](https://images.gr-assets.com/books/1361975680m/2657.jpg),  [To Kill a Mokingbird - Small Image](https://images.gr-assets.com/books/1361975680s/2657.jpg).</br></br>
+
 ## Challenges
 
 What does your project _not_ solve? Which limitations and ethical considerations should be taken into account when deploying a solution like this?
