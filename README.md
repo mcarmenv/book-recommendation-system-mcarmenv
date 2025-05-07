@@ -15,10 +15,10 @@ My personal motivation is to try to help users get better service in recommendin
 This topic is important and interesting because it helps many people know what their next book to read will be.</br>
 
 Various Problems:</br>
-* Lack of an efficient recommendation service.</br>
+- Lack of an efficient recommendation service.</br>
 - Users find it difficult to find recommended reading similar to what they are reading or have already read.</br>
-+ Does not improve aesthetics.</br>
-/ Recommendations can sometimes be ignored by the user if they don't like what is shown, by selecting the "Not interested" option.</br>
+- Does not improve aesthetics.</br>
+- Recommendations can sometimes be ignored by the user if they don't like what is shown, by selecting the "Not interested" option.</br>
 
 ### What recommendation features does Goodreads currently have?</br>
 On Goodreads, we can currently ask the platform to suggest books based on our favorite genres from the books already on our shelves.
@@ -52,6 +52,13 @@ The solution for users to get recommendations based on their current or previous
 
 **1. Load the data.**</br>
 
+First you need to make sure you have the right dataset downloaded from Kaggle: [Kaggle Dataset](https://www.kaggle.com/datasets/zygmunt/goodbooks-10k)</br>
+
+Or take a third-party example like this one, where we find six million reviews of the ten thousand most popular books with the highest number of reviews, which also includes:
+*Books marked for reading by users.
+*Book metadata: author, year, etc.
+*Tags, bookshelves, genres...
+[Zygmuntz's Readme on GitHub](https://github.com/zygmuntz/goodbooks-10k)</br>
 
 ## Challenges
 
