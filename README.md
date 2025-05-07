@@ -56,8 +56,8 @@ First you need to make sure you have the right dataset downloaded from Kaggle: [
 
 Or take a third-party example like this one, where we find six million reviews of the ten thousand most popular books with the highest number of reviews, which also includes:</br>
 **Books marked for reading by users**.</br>
-**Book metadata: author, year,...**.</br>
-**Tags, bookshelves, genres, etc**</br>
+**Book metadata: author, year, etc**.</br>
+**Tags, bookshelves, genres, etc**.</br>
 [Zygmuntz's Readme on GitHub](https://github.com/zygmuntz/goodbooks-10k)</br>
 
 ## Challenges
