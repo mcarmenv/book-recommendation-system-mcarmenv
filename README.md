@@ -41,12 +41,12 @@ The solution for users to get recommendations based on their current or previous
 ## Steps.
 **General steps.**</br>
 1.Load the data.</br>
-    1.1. Goodreads IDs.</br>
-    1.2. Data to load.</br>
+    1.1.Goodreads IDs.</br>
+    1.2.Data to load.</br>
 2.Perform a preliminary analysis.</br>
 3.Create a book recommendation system based on collaborative and/or content-based filtering.</br>
-    3.1. Pros and cons of a content-based recommendation system.</br>
-    3.2. Pros and cons of a user-based recommendation system.</br>
+    3.1.Pros and cons of a content-based recommendation system.</br>
+    3.2.Pros and cons of a user-based recommendation system.</br>
 
 ***Let's go step by step.***
 
@@ -55,9 +55,9 @@ The solution for users to get recommendations based on their current or previous
 First you need to make sure you have the right dataset downloaded from Kaggle: [Kaggle Dataset.](https://www.kaggle.com/datasets/zygmunt/goodbooks-10k)</br>
 
 Or take a third-party example like this one, where we find six million reviews of the ten thousand most popular books with the highest number of reviews, which also includes:</br>
-**Books marked for reading by users**.</br></br>
-**Book metadata: author, year, etc**.</br></br>
-**Tags, bookshelves, genres, etc**.</br></br>
+**Books marked for reading by users**.</br>
+**Book metadata: author, year, etc**.</br>
+**Tags, bookshelves, genres, etc**.</br>
 [Zygmuntz's README.MD on GitHub.](https://github.com/zygmuntz/goodbooks-10k)</br>
 
 We must also consider the necessary libraries installed, such as panda, numpy, scikit-learn, matplotlib, seaborn, etc.</br>
@@ -66,9 +66,9 @@ If you don't have them, install them with:</br>
 pip install pandas numpy scikit-learn-matplotlib, seaborn</br>
 
 Suppose I have three important files:</br>
-1. books.csv: Information about the books.</br>
-2. ratings.csv: User reviews with ratings.</br>
-3. tags.csv: Tags that users assigned to the titles.</br>
+1.books.csv: Information about the books.</br>
+2.ratings.csv: User reviews with ratings.</br>
+3.tags.csv: Tags that users assigned to the titles.</br>
 
 The books.csv file contains metadata for each book. The metadata was extracted from Goodreads XML files, available in the books_xml format.</br>
 I'll keep it concise since it's an idea and will be easier to understand in a simplified form, since full files like rating.csv take up __69 MB.__ It contains ratings sorted by time. Ratings range from one to five. Both book and user IDs are contiguous. For books, they are 1 to 10000 in the full version, and for users, they are 1 to 53424, also in the full version.</br>
