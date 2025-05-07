@@ -54,10 +54,10 @@ The solution for users to get recommendations based on their current or previous
 
 First you need to make sure you have the right dataset downloaded from Kaggle: [Kaggle Dataset](https://www.kaggle.com/datasets/zygmunt/goodbooks-10k)</br>
 
-Or take a third-party example like this one, where we find six million reviews of the ten thousand most popular books with the highest number of reviews, which also includes:
-*Books marked for reading by users.
-*Book metadata: author, year, etc.
-*Tags, bookshelves, genres...
+Or take a third-party example like this one, where we find six million reviews of the ten thousand most popular books with the highest number of reviews, which also includes:</br>
+**Books marked for reading by users**.</br>
+**Book metadata: author, year,...**.</br>
+**Tags, bookshelves, genres, etc**</br>
 [Zygmuntz's Readme on GitHub](https://github.com/zygmuntz/goodbooks-10k)</br>
 
 ## Challenges
