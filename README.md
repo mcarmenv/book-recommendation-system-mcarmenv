@@ -172,6 +172,20 @@ The files can include:</br>
 **3. Rating:** The rating a user gives a book, usually from 1 to 5.</br>
 **4. Other Additional Data:** Information such as the book title, author, genre, etc.</br>
 
+Several types of recommender systems can also be used when designing one.</br>
+There are collaborative filtering, content-based filtering, and a hybrid approach.</br>
+
+Collaborative Filtering:</br>
+There are two main approaches that can even be combined:</br>
+**1. User-based collaborative filtering:** In this case, it recommends books to a user based on the preferences of other similar users.</br>
+**2. Item-based collaborative filtering:** In this case, the system recommends books similar to those the user has already rated positively.</br>
+
+Content-based filtering:</br>
+**- Content-based filtering:** This type of system focuses on the book's own characteristics, such as genre, author, synopsis, etc., to make recommendations to users. Although user ratings wouldn't be used directly, the **.csv** file could contain useful information about the books.</br>
+
+Hybrid Approach:</br>
+A hybrid system combines the two previous approaches. Collaborative filtering can be used when there is sufficient user interaction, and content-based filtering can address cold-start issues, such as for new users with no prior ratings.</br>
+The summary of the preliminary analysis is that using .csv files with data from Goodreads is a solid foundation for building a book recommendation system. However, the design and development of this system must take into account associated challenges, such as cold start and scalability. Implementing a hybrid approach, improving data preprocessing, and using advanced techniques can help improve the accuracy and diversity of recommendations.</br>
 
 ## Challenges
 
