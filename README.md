@@ -185,6 +185,7 @@ Content-based filtering:</br>
 
 Hybrid Approach:</br>
 A hybrid system combines the two previous approaches. Collaborative filtering can be used when there is sufficient user interaction, and content-based filtering can address cold-start issues, such as for new users with no prior ratings.</br>
+
 The summary of the preliminary analysis is that using .csv files with data from Goodreads is a solid foundation for building a book recommendation system. However, the design and development of this system must take into account associated challenges, such as cold start and scalability. Implementing a hybrid approach, improving data preprocessing, and using advanced techniques can help improve the accuracy and diversity of recommendations.</br>
 
 ## Challenges
