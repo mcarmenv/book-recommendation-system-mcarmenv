@@ -203,7 +203,7 @@ How could your project grow and become something even more? What kind of skills,
 * Sources of information:</br>
 [Collaborative filtering.](https://platzi.com/blog/que-es-y-como-funciona-filtrado-colaborativo/)</br>
 [Content-based filtering.](https://www.ibm.com/es-es/think/topics/content-based-filtering#:~:text=El%20filtrado%20basado%20en%20contenido%20es%20un%20m%C3%A9todo%20de%20recuperaci%C3%A9n,la%20consulta%20de%20un%20usuario.)</br>
-[Pros and cons of collaborative filtering systems.](https://www.ibm.com/es-es/think/topics/content-based-filtering#:~:text=El%20filtrado%20basado%20en%20contenido%20es%20un%20m%C3%A9todo%20de%20recuperaci%C3%B3 ... Recommendation.](https://anderfernandez.com/blog/sistema-de-recomendacion-con-python/)</br>
+[Pros and cons of collaborative filtering systems.](https://anderfernandez.com/blog/sistema-de-recomendacion-con-python/)<br>
 [Hybrid recommendation system code or code ideas.](nderfernandez.com/blog/sistema-de-recomendacion-con-python/)</br>
 [ChatGPT to answer questions.](https://chatgpt.com/#main)</br>
 [How Goodreads Works: Complete User Guide.](https://pilarmartinarias.com/como-funciona-goodreads/)</br>
