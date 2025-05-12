@@ -160,6 +160,19 @@ tag_id, tag_name</br>
 
 [Data taken from zygmuntz's Github.](https://github.com/zygmuntz/goodbooks-10k/tree/master/samples)</br>
 
+**2. Perform a preliminary analysis.**</br>
+In this section, we are conducting a preliminary analysis of the data we have and how it will be beneficial for users. The goal is to optimize the time of Goodreads users and ensure that the recommendations are as good as possible for each reader and Goodreads user.</br>
+
+Using Python code and importing the necessary libraries, we'll make the service fully available to users every day, every month, and every year, ensuring a better experience on the web and in the app.</br>
+
+We'll be using **.csv** files that contain information about book reviews submitted by Goodreads users.</br>
+The files can include:</br>
+**1. User ID:** A unique identifier for each user.</br>
+**2. Book ID:** A unique identifier for each book.</br>
+**3. Rating:** The rating a user gives a book, usually from 1 to 5.</br>
+**4. Other Additional Data:** Information such as the book title, author, genre, etc.</br>
+
+
 ## Challenges
 
 What does your project _not_ solve? Which limitations and ethical considerations should be taken into account when deploying a solution like this?
