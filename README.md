@@ -197,10 +197,21 @@ What does your project _not_ solve? Which limitations and ethical considerations
 How could your project grow and become something even more? What kind of skills, what kind of assistance would you  need to move on? 
 
 
-## Acknowledgments
+## Bibliography and credits.</br>
 
-* list here the sources of inspiration 
-* do not use code, images, data etc. from others without permission
-* when you have permission to use other people's materials, always mention the original creator and the open source / Creative Commons licence they've used
-  <br>For example: [Sleeping Cat on Her Back by Umberto Salvagnin](https://commons.wikimedia.org/wiki/File:Sleeping_cat_on_her_back.jpg#filelinks) / [CC BY 2.0](https://creativecommons.org/licenses/by/2.0)
-* etc
+* Sources of inspiration: [GitHub user zygmuntz.](https://github.com/zygmuntz)</br>
+* Sources of information:</br>
+[Collaborative filtering.](https://platzi.com/blog/que-es-y-como-funciona-filtrado-colaborativo/)</br>
+[Content-based filtering.](https://www.ibm.com/es-es/think/topics/content-based-filtering#:~:text=El%20filtrado%20basado%20en%20contenido%20es%20un%20m%C3%A9todo%20de%20recuperaci%C3%A9n,la%20consulta%20de%20un%20usuario.)</br>
+[Pros and cons of collaborative filtering systems.](https://www.ibm.com/es-es/think/topics/content-based-filtering#:~:text=El%20filtrado%20basado%20en%20contenido%20es%20un%20m%C3%A9todo%20de%20recuperaci%C3%B3 ... Recommendation.](https://anderfernandez.com/blog/sistema-de-recomendacion-con-python/)</br>
+[Hybrid recommendation system code or code ideas.](nderfernandez.com/blog/sistema-de-recomendacion-con-python/)</br>
+[ChatGPT to answer questions.](https://chatgpt.com/#main)</br>
+[How Goodreads Works: Complete User Guide.](https://pilarmartinarias.com/como-funciona-goodreads/)</br>
+[Help information page for the Goodreads platform.](https://help.goodreads.com/s/)</br>
+[My own Goodreads account.]((https://www.goodreads.com/emece_reading)</br>
+* Images from Google or press articles like the one from Dical for the initial image of books.</br>
+[Image from dical.](https://dical.es/modules/ph_simpleblog/featured/78.jpg)</br>
+[Goodreads logo.](https://upload.wikimedia.org/wikipedia/commons/1/1a/Goodreads_logo.svg)</br>
+* Permission to use other people's materials:<br> 
+[This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License.](https://github.com/zygmuntz/goodbooks-10k)</br> 
+[CC BY 4.0](http://creativecommons.org/licenses/by-sa/4.0/)
