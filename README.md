@@ -210,6 +210,28 @@ In a simple sentence: The system can be improved with a hybrid approach, which c
 
 **3.1. Pros and cons of the content-based recommendation system.**</br>
 
+**PROS:**</br>
+* The system allows for predictions from the moment a user consumes a product. This means the system doesn't suffer from the problem known as cold start.</br>
+* It is an adaptive system: if the user changes their tastes, the system will quickly pick up on those changes.</br>
+* Unpopular products may be recommended, in this case, unpopular books.</br>
+* This is a system that is easy to scale.</br>
+
+**CONS:**</br>
+* The recommended content is always similar. That is, if a person reads science fiction books, it's unlikely they'll be recommended books of another genre.</br>
+
+**3.2. Pros and cons of the user-based recommendation system.**</br></br>
+
+**PROS:**</br>
+* It can offer content that is different from what is usually consumed. Returning to the examples, the user-based recommendation system is able to recommend 'Harry Potter and the Prisoner of Azkaban', even though it is very different from what is usually read (fantasy books).</br>
+
+**CONS:**</br>
+* Difficulty recommending new content. Since few (if any) people will have consumed that content, it's difficult for a user-based recommendation system to recommend new content.</br>
+* They suffer from the cold start problem. They require a high amount of content to properly profile a user and make recommendations.</br>
+
+Hence the explanation that a hybrid recommendation system, where both systems are combined, has the strengths of both the content-based and user-based recommendation systems.</br>
+
+
+
 ## Challenges
 
 What does your project _not_ solve? Which limitations and ethical considerations should be taken into account when deploying a solution like this?
