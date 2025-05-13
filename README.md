@@ -188,6 +188,28 @@ A hybrid system combines the two previous approaches. Collaborative filtering ca
 
 The summary of the preliminary analysis is that using .csv files with data from Goodreads is a solid foundation for building a book recommendation system. However, the design and development of this system must take into account associated challenges, such as cold start and scalability. Implementing a hybrid approach, improving data preprocessing, and using advanced techniques can help improve the accuracy and diversity of recommendations.</br>
 
+**3. Create a book recommendation system based on collaborative and/or content-based filtering.**</br>
+
+Creating a book recommendation system for Goodreads based on collaborative and/or content-based filtering can be done using Python code.
+The most common libraries are pandas, surprise (for collaborative filtering), and scikit-learn (for content-based filtering). The first step is to install them with the command **pip install pandas scikit-learn surprise**.</br>
+
+For **collaborative filtering** we will use the **Surprise** library and for content-based filtering we will use the **scikit-learn** library.</br>
+
+The next step is to prepare the dataset that is in the three .csv files from Goodreads, or a third party.</br>
+We load the ratings dataset.</br>
+We load the book dataset.</br>
+We load the set of labels.</br>
+We load or display the first records.</br>
+We then prepare the data for surprise, split it into training and test data, use the KNN algorithm for collaborative filtering, and train the model. We make predictions on the test set, evaluate the RMSE of the model, and create a book recommendation function.</br>
+Finally, we tell you to get the best recommendations for each user and show those recommendations with a **for**.</br>
+For **content-based filtering**, we tell you to use book features. Preprocess the data by combining the author and genre into a single column. Use **TfidfVectorizer** to convert the text into features, calculate the cosine similarity between books, use a function to get content-based recommendations, and make recommendations for a book based on its identifier.</br>
+For the **hybrid method**, which combines both approaches, collaborative filtering can be used to recommend similar books based on user interactions. The next step would be to filter those recommendations to make them relevant, based on a book's characteristics.</br>
+Assuming we already have collaborative predictions and content-based recommendations, we get the best collaborative recommendations for a user, filter out the content-based ones, and ask for examples of hybrid recommendations for that user.</br>
+
+In a simple sentence: The system can be improved with a hybrid approach, which combines the advantages of both methods to offer recommendations.
+
+**3.1. Pros and cons of the content-based recommendation system.**</br>
+
 ## Challenges
 
 What does your project _not_ solve? Which limitations and ethical considerations should be taken into account when deploying a solution like this?
