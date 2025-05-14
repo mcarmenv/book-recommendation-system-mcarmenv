@@ -219,7 +219,7 @@ In a simple sentence: The system can be improved with a hybrid approach, which c
 **CONS:**</br>
 * The recommended content is always similar. That is, if a person reads science fiction books, it's unlikely they'll be recommended books of another genre.</br>
 
-**3.2. Pros and cons of the user-based recommendation system.**</br></br>
+**3.2. Pros and cons of the user-based recommendation system.**</br>
 
 **PROS:**</br>
 * It can offer content that is different from what is usually consumed. Returning to the examples, the user-based recommendation system is able to recommend 'Harry Potter and the Prisoner of Azkaban', even though it is very different from what is usually read (fantasy books).</br>
