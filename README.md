@@ -279,13 +279,19 @@ user_id = 123</br>
 book_title = "The Hobbit"</br>
 recommendations = hybrid_recommendations(user_id, book_title)</br>
 print(recommendations)</br>
+
+## Data source and AI methods.
+My data is data collected by third parties on the Goodreads website or app.
+For example, Kaggle Datasets, since the APIs have been outdated since 2020, are an excellent option for building a book recommendation system.</br>
+
+The data or sources also come from other GitHub users as I mentioned in the **Steps** section.</br>
+
+The rest of the sources and credits are mentioned in the last section called **Bibliography and credits**.</br>
+
 ## Challenges
 
-What does your project _not_ solve? Which limitations and ethical considerations should be taken into account when deploying a solution like this?
 
 ## What next?
-
-How could your project grow and become something even more? What kind of skills, what kind of assistance would you  need to move on? 
 
 
 ## Bibliography and credits.</br>
