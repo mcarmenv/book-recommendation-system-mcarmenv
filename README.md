@@ -230,8 +230,55 @@ In a simple sentence: The system can be improved with a hybrid approach, which c
 
 Hence the explanation that a hybrid recommendation system, where both systems are combined, has the strengths of both the content-based and user-based recommendation systems.</br>
 
+## Example of Python code that could be used to implement this system using the hybrid recommendation system.</br>
+The code is designed to implement a hybrid recommendation system that uses both content-based filtering and collaborative filtering.</br>
+<!-- I'm using br here because it's written to display the readme.md document, but they shouldn't and can't be used in Python code. This is just a sample.-->
 
+<!-- Import libraries-->
+import pandas as pd</br>
+from sklearn.feature_extration.text import TfidVectorizer</br>
+from sklearn.metrics.pairwise import linear_kernel</br>
+from surprise import Dataset, Reader, SVD</br>
+from surprise.model_selection import train_test_split</br>
 
+<!-- Load data -->
+books = pd.read_csv('books.csv')</br>
+books()</br>
+books.head()</br>
+
+<!-- Content-based filtering -->
+books['descrition'] = books['description].fillna('')</br>
+tfidf = TfidfVectorizer(stop_words='english')</br>
+tfidf_matrix = tfidf.fit_transform(books['description])</br>
+cosine_sim = linear_kernel(tfidf_matrix, tfidf_matrix)</br>
+indices = pd.Series(books.index,index=books['title']).drop_duplicates()</br>
+
+def content_recommendations(title, top_n=20):</br>
+    idx= indices[title]</br>
+    sim_scores = list(enumerate(cosine_sim[idx]))</br>
+    sim_scores = sorted(sim_scores, key=lambda x: x[1], reverse=True)[1:top_n+1]</br>
+    book_indices = [i[0] for i in sim_scores]</br>
+    return books[['title', 'authors']].iloc[book_indices]</br>
+
+<!-- Collaborative Filtering (SVD)-->
+reader = Reader(rating_scale(0, 5))</br>
+data = Dataset.load_from_df(ratings['user_id', 'book_id', 'rating'], reader)</br>
+trainset, _ = train_test_split(data, test_size=0.2)</br>
+svd = SVD()</br>
+svd.fit(trainset)</br>
+
+def hybrid_recommendations(user_id, title, top_n=20):</br>
+   content_recs = content_recommendations(title, top_n=30)</br>
+    content_recs = content_recs.merge(books[['title', 'book_id']], on='title')</br>
+    content_recs['predicted_rating'] = content_recs['book_id'].apply(lambda x: svd.predict(user_id, x).est)</br>
+    content_recs = content_recs.sort_values('predicted_rating', ascending=False)</br>
+    return content_recs[['title', 'authors', 'predicted_rating']].head(top_n)</br>
+
+<!-- Example of use -->
+user_id = 123</br>
+book_title = "The Hobbit"</br>
+recommendations = hybrid_recommendations(user_id, book_title)</br>
+print(recommendations)</br>
 ## Challenges
 
 What does your project _not_ solve? Which limitations and ethical considerations should be taken into account when deploying a solution like this?
