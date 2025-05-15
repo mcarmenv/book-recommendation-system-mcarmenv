@@ -235,16 +235,16 @@ The code is designed to implement a hybrid recommendation system that uses both 
 <!-- I'm using br here because it's written to display the readme.md document, but they shouldn't and can't be used in Python code. This is just a sample.-->
 
 <!-- Import libraries-->
-import pandas as pd</br>
-from sklearn.feature_extration.text import TfidVectorizer</br>
-from sklearn.metrics.pairwise import linear_kernel</br>
-from surprise import Dataset, Reader, SVD</br>
-from surprise.model_selection import train_test_split</br>
+import pandas as pd</br> <!-- panda is a Python library for data manipulation and analysis, primarily for data structures such as DataFrames (tables).-->
+from sklearn.feature_extration.text import TfidVectorizer</br> <!-- TfidfVectorizer is a scikit-learn library class that converts a set of text documents into a set of numerical features using the TF-IDF model. -->
+from sklearn.metrics.pairwise import linear_kernel</br> <!-- linear_kernel is a scikit-learn function that calculates the dot product of two matrices.-->
+from surprise import Dataset, Reader, SVD</br> <!-- surprise is a Python library specialized in creating recommendation systems. Dataset and Reader are classes used to load and manipulate rating data. SVD is a matrix decomposition technique used in collaborative filtering.-->
+from surprise.model_selection import train_test_split</br> <!-- train_test_split is a function to split data into a training set and a test set, useful for evaluating the performance of a model.-->
 
 <!-- Load data -->
-books = pd.read_csv('books.csv')</br>
-books()</br>
-books.head()</br>
+books = pd.read_csv('books.csv')</br> <!-- Loads a CSV file named books.csv into a pandas DataFrame. This file contains information about books, such as title, description, author, etc.-->
+books()</br> <!-- This looks like a bug. The intent here was to display the first few rows of the DataFrame, which should be something like books.head(). If left like this, it will generate an error because books() is not a function.-->
+books.head()</br> <!-- Function to display the first rows of the DataFrame.-->
 
 <!-- Content-based filtering -->
 books['descrition'] = books['description].fillna('')</br>
@@ -292,6 +292,9 @@ The rest of the sources and credits are mentioned in the last section called **B
 
 
 ## What next?
+
+
+## Conclusion.
 
 
 ## Bibliography and credits.</br>
