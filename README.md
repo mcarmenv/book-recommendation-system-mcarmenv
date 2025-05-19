@@ -247,11 +247,11 @@ books()</br> <!-- This looks like a bug. The intent here was to display the firs
 books.head()</br> <!-- Function to display the first rows of the DataFrame.-->
 
 <!-- Content-based filtering -->
-books['descrition'] = books['description].fillna('')</br>
-tfidf = TfidfVectorizer(stop_words='english')</br>
-tfidf_matrix = tfidf.fit_transform(books['description])</br>
-cosine_sim = linear_kernel(tfidf_matrix, tfidf_matrix)</br>
-indices = pd.Series(books.index,index=books['title']).drop_duplicates()</br>
+books['descrition'] = books['description].fillna('')</br> <!-- Any NaN (empty) values ​​in the description column are being filled with an empty string. This is to avoid problems when processing missing descriptions.-->
+tfidf = TfidfVectorizer(stop_words='english')</br> <!-- An instance of TfidfVectorizer is created and told to ignore common English words (stop words), such as "the", "and", etc.-->
+tfidf_matrix = tfidf.fit_transform(books['description])</br> <!-- The TF-IDF vectorizer is fitted to the book descriptions and each description is converted into a feature vector, resulting in a sparse matrix.-->
+cosine_sim = linear_kernel(tfidf_matrix, tfidf_matrix)</br> <!-- Calculates the cosine similarity between the books' feature vectors. This results in a similarity matrix where each entry indicates how similar two books are based on their descriptions.-->
+indices = pd.Series(books.index,index=books['title']).drop_duplicates()</br> <!-- Creates an index based on book titles, making it easy to find the index for a book given its title. drop_duplicates() removes any duplicate titles.-->
 
 def content_recommendations(title, top_n=20):</br>
     idx= indices[title]</br>
@@ -259,6 +259,12 @@ def content_recommendations(title, top_n=20):</br>
     sim_scores = sorted(sim_scores, key=lambda x: x[1], reverse=True)[1:top_n+1]</br>
     book_indices = [i[0] for i in sim_scores]</br>
     return books[['title', 'authors']].iloc[book_indices]</br>
+<!-- This function takes a book title and returns the best content-based recommendations.
+idx = indices[title]: Gets the book's index.
+sim_scores: Gets the similarities of that book to all other books.
+sorted(sim_scores, key=lambda x: x[1], reverse=True): Sorts the books by similarity score in descending order.
+book_indices: Gets the indices of the most similar books.
+Finally, it returns a DataFrame with the titles and authors of the recommended books. -->
 
 <!-- Collaborative Filtering (SVD)-->
 reader = Reader(rating_scale(0, 5))</br>
@@ -289,7 +295,8 @@ The data or sources also come from other GitHub users as I mentioned in the **St
 The rest of the sources and credits are mentioned in the last section called **Bibliography and credits**.</br>
 
 ## Challenges
-
+My project does not solve the aesthetics of the app or the website, nor does it solve the reviews made by other users, even if other users do not like them, since everyone has freedom of expression within education and respect, with other fans of different books and with authors, or the non-reviews and non-ratings even if the book was marked as read, since they are not considered important data, being simply opinions, nor does it solve the number of times that recommendations by users are ignored.</br>
+Limitations and ethical considerations would include respect for each user's ratings for each book, whether they also review it verbally or not at all, simply scoring it from 0 to 5. It must be taken into account that this is a recommendation system when implementing a solution, and that these ratings must be respected by both the person working on the recommendation system and its end users. It's important to understand that it would be another tool to make life easier for readers when they search for a recommendation or a future read, without resorting to social media.
 
 ## What next?
 
