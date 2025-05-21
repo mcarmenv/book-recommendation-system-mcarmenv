@@ -264,14 +264,14 @@ idx = indices[title]: Gets the book's index.
 sim_scores: Gets the similarities of that book to all other books.
 sorted(sim_scores, key=lambda x: x[1], reverse=True): Sorts the books by similarity score in descending order.
 book_indices: Gets the indices of the most similar books.
-Finally, it returns a DataFrame with the titles and authors of the recommended books. -->
+Finally, it returns a DataFrame with the titles and authors of the recommended books.-->
 
 <!-- Collaborative Filtering (SVD)-->
-reader = Reader(rating_scale(0, 5))</br>
-data = Dataset.load_from_df(ratings['user_id', 'book_id', 'rating'], reader)</br>
-trainset, _ = train_test_split(data, test_size=0.2)</br>
-svd = SVD()</br>
-svd.fit(trainset)</br>
+reader = Reader(rating_scale(0, 5))</br> <!-- Creates a surprise library Reader object that defines the range of book ratings (from 0 to 5).-->
+data = Dataset.load_from_df(ratings['user_id', 'book_id', 'rating'], reader)</br> <!-- Loads ratings data in a format that can be used as a surprise library. DataFrame must have three columns: user_id, book_id and rating.-->
+trainset, _ = train_test_split(data, test_size=0.2)</br> <!-- Split the data into a training set (80%) and a test set (20%). Only the training set is used in this case.-->
+svd = SVD()</br> <!-- A singular value decomposition (SVD) model is created to perform collaborative filtering.-->
+svd.fit(trainset)</br> <!-- Adjusts the SVD model using the training set.-->
 
 def hybrid_recommendations(user_id, title, top_n=20):</br>
    content_recs = content_recommendations(title, top_n=30)</br>
@@ -279,6 +279,8 @@ def hybrid_recommendations(user_id, title, top_n=20):</br>
     content_recs['predicted_rating'] = content_recs['book_id'].apply(lambda x: svd.predict(user_id, x).est)</br>
     content_recs = content_recs.sort_values('predicted_rating', ascending=False)</br>
     return content_recs[['title', 'authors', 'predicted_rating']].head(top_n)</br>
+<!-- This is the main function for generating hybrid recommendations that combine content-based and collaborative filtering. 
+It first obtains the content-based recommendations for a specific title. Then, it merges the content recommendations with the book identifiers. It predicts book ratings for the user using the SVD model. It sorts the recommendations, by the predicted ratings (from highest to lowest). Finally, it returns the first top_n recommendations with their title, author and predicted rating.-->
 
 <!-- Example of use -->
 user_id = 123</br>
@@ -299,7 +301,10 @@ My project does not solve the aesthetics of the app or the website, nor does it 
 Limitations and ethical considerations would include respect for each user's ratings for each book, whether they also review it verbally or not at all, simply scoring it from 0 to 5. It must be taken into account that this is a recommendation system when implementing a solution, and that these ratings must be respected by both the person working on the recommendation system and its end users. It's important to understand that it would be another tool to make life easier for readers when they search for a recommendation or a future read, without resorting to social media.
 
 ## What next?
+**What follows:** </br>
 
+This project could grow with a good investment, a good team that is willing to help improve not only the recommendation system, but also the people who will use it, i.e. Goodreads users.<*br>
+It would need a good team to support the system, qualified staff and a significant monetary investment to be able to go ahead and develop it fully.</br>
 
 ## Conclusion.
 
