@@ -282,11 +282,16 @@ def hybrid_recommendations(user_id, title, top_n=20):</br>
 <!-- This is the main function for generating hybrid recommendations that combine content-based and collaborative filtering. 
 It first obtains the content-based recommendations for a specific title. Then, it merges the content recommendations with the book identifiers. It predicts book ratings for the user using the SVD model. It sorts the recommendations, by the predicted ratings (from highest to lowest). Finally, it returns the first top_n recommendations with their title, author and predicted rating.-->
 
-<!-- Example of use -->
-user_id = 123</br>
-book_title = "The Hobbit"</br>
-recommendations = hybrid_recommendations(user_id, book_title)</br>
-print(recommendations)</br>
+<!-- Summary:
+This code combines two recommendation approaches.
+Content-based filtering - uses book descriptions to find similar books.
+Collaborative filtering (SVD) - uses user ratings to predict the rating a user might give a book. -->
+
+<!-- Example of use --> 
+user_id = 123</br> <!-- Replace with a valid user ID-->
+book_title = "The Hobbit"</br> <!-- Make sure it exists in books['title']-->
+recommendations = hybrid_recommendations(user_id, book_title)</br> <!-- Finally, the hybrid_recommendations function combines both methods to offer more accurate recommendations, taking into account both the book's characteristics and the user's preferences.-->
+print(recommendations)</br> <!-- Show results.-->
 
 ## Data source and AI methods.
 My data is data collected by third parties on the Goodreads website or app.
@@ -307,7 +312,9 @@ This project could grow with a good investment, a good team that is willing to h
 It would need a good team to support the system, qualified staff and a significant monetary investment to be able to go ahead and develop it fully.</br>
 
 ## Conclusion.
-
+**Final Conclusion:** The reality is that in this challenging world, having a little free time to read is essential. This recommendation system aims to save Goodreads users a few extra minutes, allowing them to read enough to finish a book in three weeks, if their life allows.</br>
+This system aims to make people who use it feel like they are connecting with others when they see a book recommendation and stop to look at its rating and some reviews, to finally make the decision to start reading it.<br>
+We need to stay informed about everything and constantly connect with others to continue growing, and this is a great way to do it. It's like a big book club where everyone is welcome.
 
 ## Bibliography and credits.</br>
 
