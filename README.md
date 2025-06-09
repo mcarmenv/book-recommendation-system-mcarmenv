@@ -70,7 +70,7 @@ Suppose I have three important files:</br>
 2.ratings.csv: User reviews with ratings.</br>
 3.tags.csv: Tags that users assigned to the titles.</br>
 
-The books.csv file contains meta data for each book. The metadata was extracted from Goodreads XML files, available in the books_xml format.</br>
+The books.csv file contains metadata for each book. The metadata was extracted from Goodreads XML files, available in the books_xml format.</br>
 I'll keep it concise since it's an idea and will be easier to understand in a simplified form, since full files like rating.csv take up __69 MB.__ It contains ratings sorted by time. Ratings range from one to five. Both book and user IDs are contiguous. For books, they are 1 to 10000 in the full version, and for users, they are 1 to 53424, also in the full version.</br>
 The tags.csv file translates tag IDs into names.</br>
 
