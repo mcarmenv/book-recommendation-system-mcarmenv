@@ -85,7 +85,7 @@ You can use GoodReads book and work identifiers to create URLs as follows:</br>
 Note that book_id in ratings.csv and to_read.csv maps to work_id , not goodreads_book_id , meaning that ratings across editions are aggregated.
 
 ##### **1.2. Data to load.**
-In the **books.csv** file, for example and in a simplified manner for 20 books, there would be the following data:</br>
+In the **books.csv** file, for example, and in a simplified manner for 20 books, there would be the following data:</br>
 
 book_id, goodreads_book_id, best_book_id, work_id, books_count, isbn , isbn13, authors, original_publication_year, original_title, title, language_code, average_rating, ratings_count, work_ratings_count, work_text_reviews_count, ratings_1, ratings_2, ratings_3, ratings_4, ratings_5, image_url, small_image_url.</br>
 
