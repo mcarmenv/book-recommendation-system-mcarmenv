@@ -134,7 +134,7 @@ user_id, book_id, rating</br>
 4, 2, 5</br>
 4, 23, 5,</br>
 
-In the **tags.csv.** file for those 20 books, the data would be:</br>
+In the **tags.csv** file for those 20 books, the data would be:</br>
 
 tag_id, tag_name</br>
 0, -</br>
