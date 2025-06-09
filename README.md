@@ -5,7 +5,7 @@
 ## Summary
 
 This system will help Goodreads users have a better recommendation system based on collaborative or content-based filtering, or a combination of both.</br>
-This project analyzes user interests and suggests books that might interest them. The goal is to help many people around the world who love reading discover new books in an easy and personalized way.</br>
+This project analyses user interests and suggests books that might interest them. The goal is to help many people around the world who love reading discover new books in an easy and personalized way.</br>
 
 
 ## Concept
