@@ -328,8 +328,8 @@ We need to stay informed about everything and constantly connect with others to 
 [How Goodreads Works: Complete User Guide.](https://pilarmartinarias.com/como-funciona-goodreads/)</br>
 [Help information page for the Goodreads platform.](https://help.goodreads.com/s/)</br>
 [My own Goodreads account.](https://www.goodreads.com/emece_reading)</br>
-* Images from Google or press articles like the one from Dical for the initial image of books.</br>
-[Image from dical.](https://dical.es/modules/ph_simpleblog/featured/78.jpg)</br>
+* Images from Google or press articles like the one from Dical for the initial image of books:</br>
+[Image from Dical.](https://dical.es/modules/ph_simpleblog/featured/78.jpg)</br>
 [Goodreads logo.](https://upload.wikimedia.org/wikipedia/commons/1/1a/Goodreads_logo.svg)</br>
 * Permission to use other people's materials:<br> 
 [This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License.](https://github.com/zygmuntz/goodbooks-10k)</br> 
