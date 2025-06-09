@@ -75,7 +75,7 @@ I'll keep it concise since it's an idea and will be easier to understand in a si
 The tags.csv file translates tag IDs into names.</br>
 
 ##### **1.1. Goodreads IDs.**
-Each book can have multiple editions. goodreads_book_id and best_book_id generally point to the most popular edition of a given book, while goodreads work_id refers to the book in the abstract sense.
+Each book can have multiple editions. goodreads_book_id and best_book_id generally point to the most popular edition of a given book, while Goodreads work_id refers to the book in the abstract sense.
 
 
 You can use GoodReads book and work identifiers to create URLs as follows:</br>
