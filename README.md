@@ -193,7 +193,7 @@ The summary of the preliminary analysis is that using .csv files with data from 
 Creating a book recommendation system for Goodreads based on collaborative and/or content-based filtering can be done using Python code.
 The most common libraries are pandas, surprise (for collaborative filtering), and scikit-learn (for content-based filtering). The first step is to install them with the command **pip install pandas scikit-learn surprise**.</br>
 
-For **collaborative filtering** we will use the **Surprise** library and for content-based filtering we will use the **scikit-learn** library.</br>
+For **collaborative filtering**, we will use the **Surprise** library and for content-based filtering we will use the **scikit-learn** library.</br>
 
 The next step is to prepare the dataset that is in the three .csv files from Goodreads, or a third party.</br>
 We load the ratings dataset.</br>
