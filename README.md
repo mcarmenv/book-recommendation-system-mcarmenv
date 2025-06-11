@@ -283,7 +283,7 @@ def hybrid_recommendations(user_id, title, top_n=20):</br>
 It first obtains the content-based recommendations for a specific title. Then, it merges the content recommendations with the book identifiers. It predicts book ratings for the user using the SVD model. It sorts the recommendations, by the predicted ratings (from highest to lowest). Finally, it returns the first top_n recommendations with their title, author and predicted rating.-->
 
 <!-- Summary:
-This code combines two recommendation approaches.
+This code combines the two recommended approaches.
 Content-based filtering - uses book descriptions to find similar books.
 Collaborative filtering (SVD) - uses user ratings to predict the rating a user might give a book. -->
 
