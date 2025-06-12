@@ -132,7 +132,7 @@ user_id, book_id, rating</br>
 4, 27, 5</br>
 4, 21, 5</br>
 4, 2, 5</br>
-4, 23, 5,</br>
+4, 23, 5</br>
 
 In the **tags.csv** file for those 20 books, the data would be:</br>
 
