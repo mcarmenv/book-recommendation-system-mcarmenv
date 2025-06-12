@@ -237,21 +237,21 @@ The code is designed to implement a hybrid recommendation system that uses both 
 <!-- Import libraries-->
 import pandas as pd</br> <!-- panda is a Python library for data manipulation and analysis, primarily for data structures such as DataFrames (tables).-->
 
-from sklearn.feature_extration.text import TfidVectorizer</br> <!-- TfidfVectorizer is a scikit-learn library class that converts a set of text documents into a set of numerical features using the TF-IDF model. -->
+from sklearn.feature_extraction.text import TfidVectorizer</br> <!-- TfidfVectorizer is a scikit-learn library class that converts a set of text documents into a set of numerical features using the TF-IDF model. -->
 from sklearn.metrics.pairwise import linear_kernel</br> <!-- linear_kernel is a scikit-learn function that calculates the dot product of two matrices.-->
 from surprise import Dataset, Reader, SVD</br> <!-- surprise is a Python library specialized in creating recommendation systems. Dataset and Reader are classes used to load and manipulate rating data. SVD is a matrix decomposition technique used in collaborative filtering.-->
 from surprise.model_selection import train_test_split</br> <!-- train_test_split is a function to split data into a training set and a test set, useful for evaluating the performance of a model.-->
 
 <!-- Load data -->
 books = pd.read_csv('books.csv')</br> <!-- Loads a CSV file named books.csv into a pandas DataFrame. This file contains information about books, such as title, description, author, etc.-->
-books()</br> <!-- This looks like a bug. The intent here was to display the first few rows of the DataFrame, which should be something like books.head(). If left like this, it will generate an error because books() is not a function.-->
 books.head()</br> <!-- Function to display the first rows of the DataFrame.-->
+books['description'] = books['description'].fillna('')</br> <!-- Any NaN (empty) values ​​in the description column are being filled with an empty string. This is to avoid problems when processing missing descriptions.-->
 
 <!-- Content-based filtering -->
-books['descrition'] = books['description'].fillna('')</br> <!-- Any NaN (empty) values ​​in the description column are being filled with an empty string. This is to avoid problems when processing missing descriptions.-->
 tfidf = TfidfVectorizer(stop_words='english')</br> <!-- An instance of TfidfVectorizer is created and told to ignore common English words (stop words), such as "the", "and", etc.-->
 tfidf_matrix = tfidf.fit_transform(books['description'])</br> <!-- The TF-IDF vectorizer is fitted to the book descriptions and each description is converted into a feature vector, resulting in a sparse matrix.-->
 cosine_sim = linear_kernel(tfidf_matrix, tfidf_matrix)</br> <!-- Calculates the cosine similarity between the books' feature vectors. This results in a similarity matrix where each entry indicates how similar two books are based on their descriptions.-->
+
 indices = pd.Series(books.index,index=books['title']).drop_duplicates()</br> <!-- Creates an index based on book titles, making it easy to find the index for a book given its title. drop_duplicates() removes any duplicate titles.-->
 
 def content_recommendations(title, top_n=20):</br>
@@ -259,7 +259,7 @@ def content_recommendations(title, top_n=20):</br>
     sim_scores = list(enumerate(cosine_sim[idx]))</br>
     sim_scores = sorted(sim_scores, key=lambda x: x[1], reverse=True)[1:top_n+1]</br>
     book_indices = [i[0] for i in sim_scores]</br>
-    return books['title', 'authors'].iloc[book_indices]</br>
+    return books[['title', 'authors']].iloc[book_indices]</br>
 <!-- This function takes a book title and returns the best content-based recommendations.
 idx = indices[title]: Gets the book's index.
 sim_scores: Gets the similarities of that book to all other books.
@@ -267,10 +267,14 @@ sorted(sim_scores, key=lambda x: x[1], reverse=True): Sorts the books by similar
 book_indices: Gets the indices of the most similar books.
 Finally, it returns a DataFrame with the titles and authors of the recommended books.-->
 
-<!-- Collaborative Filtering (SVD)-->
-reader = Reader(rating_scale(0, 5))</br> <!-- Creates a surprise library Reader object that defines the range of book ratings (from 0 to 5).-->
-data = Dataset.load_from_df(ratings['user_id', 'book_id', 'rating'], reader)</br> <!-- Loads ratings data in a format that can be used as a surprise library. DataFrame must have three columns: user_id, book_id and rating.-->
+ratings = pd.read_csv('ratings.csv')</br><!-- Load the 'ratings.csv' file into a DataFrame named 'ratings'-->
+<!-- Let's say you have a DataFrame 'ratings' already loaded with columns: user_id, book_id, rating. Make sure you have this file. -->
+
+reader = Reader(rating_scale=(0, 5))</br> <!-- Creates a surprise library Reader object that defines the range of book ratings (from 0 to 5).-->
+data = Dataset.load_from_df(ratings[['user_id', 'book_id', 'rating']], reader)</br> <!-- Loads ratings data in a format that can be used as a surprise library. DataFrame must have three columns: user_id, book_id and rating.-->
 trainset, _ = train_test_split(data, test_size=0.2)</br> <!-- Split the data into a training set (80%) and a test set (20%). Only the training set is used in this case.-->
+
+<!-- Collaborative Filtering (SVD)-->
 svd = SVD()</br> <!-- A singular value decomposition (SVD) model is created to perform collaborative filtering.-->
 svd.fit(trainset)</br> <!-- Adjusts the SVD model using the training set.-->
 
@@ -279,7 +283,7 @@ def hybrid_recommendations(user_id, title, top_n=20):</br>
     content_recs = content_recs.merge(books['title', 'book_id'], on='title')</br>
     content_recs['predicted_rating'] = content_recs['book_id'].apply(lambda x: svd.predict(user_id, x).est)</br>
     content_recs = content_recs.sort_values('predicted_rating', ascending=False)</br>
-    return content_recs['title', 'authors', 'predicted_rating'].head(top_n)</br>
+    return content_recs[['title', 'authors', 'predicted_rating']].head(top_n)</br>
 <!-- This is the main function for generating hybrid recommendations that combine content-based and collaborative filtering. 
 It first obtains the content-based recommendations for a specific title. Then, it merges the content recommendations with the book identifiers. It predicts book ratings for the user using the SVD model. It sorts the recommendations, by the predicted ratings (from highest to lowest). Finally, it returns the first top_n recommendations with their title, author and predicted rating.-->
 
