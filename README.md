@@ -276,10 +276,10 @@ svd.fit(trainset)</br> <!-- Adjusts the SVD model using the training set.-->
 
 def hybrid_recommendations(user_id, title, top_n=20):</br>
     content_recs = content_recommendations(title, top_n=30)</br>
-    content_recs = content_recs.merge(books[['title', 'book_id']], on='title')</br>
+    content_recs = content_recs.merge(books['title', 'book_id'], on='title')</br>
     content_recs['predicted_rating'] = content_recs['book_id'].apply(lambda x: svd.predict(user_id, x).est)</br>
     content_recs = content_recs.sort_values('predicted_rating', ascending=False)</br>
-    return content_recs[['title', 'authors', 'predicted_rating']].head(top_n)</br>
+    return content_recs['title', 'authors', 'predicted_rating'].head(top_n)</br>
 <!-- This is the main function for generating hybrid recommendations that combine content-based and collaborative filtering. 
 It first obtains the content-based recommendations for a specific title. Then, it merges the content recommendations with the book identifiers. It predicts book ratings for the user using the SVD model. It sorts the recommendations, by the predicted ratings (from highest to lowest). Finally, it returns the first top_n recommendations with their title, author and predicted rating.-->
 
