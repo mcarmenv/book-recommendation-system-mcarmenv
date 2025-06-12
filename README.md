@@ -63,7 +63,7 @@ Or take a third-party example like this one, where we find six million reviews o
 We must also consider the necessary libraries installed, such as panda, numpy, scikit-learn, matplotlib, seaborn, etc.</br>
 If you don't have them, install them with:</br>
 <sub>bash</sub></br>
-pip install pandas numpy scikit-learn-matplotlib, seaborn</br>
+pip install pandas numpy scikit-learn-matplotlib, seaborn </br>
 
 Suppose I have three important files:</br>
 1.books.csv: Information about the books.</br>
