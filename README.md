@@ -313,7 +313,7 @@ Limitations and ethical considerations would include respect for each user's rat
 ## What next?
 **What follows:** </br>
 
-This project could grow with a good investment, a good team that is willing to help improve not only the recommendation system, but also the people who will use it, i.e. Goodreads users.<*br>
+This project could grow with a good investment, a good team that is willing to help improve not only the recommendation system, but also the people who will use it, i.e. Goodreads users.</br>
 It would need a good team to support the system, qualified staff and a significant monetary investment to be able to go ahead and develop it fully.</br>
 
 ## Conclusion.
